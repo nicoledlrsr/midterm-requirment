@@ -1,0 +1,431 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #dc3545 !important;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #dc3545;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #dc3545;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover:after,
+.nav-link.active:after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #6c757d;
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 20px;
+}
+
+.product-card .price {
+    font-weight: 700;
+    color: #dc3545;
+    font-size: 1.1rem;
+}
+
+/* Newsletter */
+.newsletter {
+    background: linear-gradient(135deg, #ffcce6 0%, #ff99cc 100%);
+}
+
+.newsletter .section-title:after {
+    background-color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    background-color: #212529;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #dc3545;
+    color: #ffffff !important;
+}
+
+/* About Page */
+.about-hero {
+    background: url('bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 120px 0;
+    position: relative;
+}
+
+.about-hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(220, 53, 69, 0.1);
+    border-radius: 50%;
+}
+
+.team-card {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Products Page */
+.products-hero {
+    background: url('bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 120px 0;
+    position: relative;
+}
+
+.products-hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.products-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Contact Page */
+.contact-hero {
+    background: url('bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 120px 0;
+    position: relative;
+}
+
+.contact-hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-methods i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+/* Product Filter */
+.product-filter {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/* Form Validation */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+    border-color: #198754;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* Product Card Enhancements */
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card .badge {
+    z-index: 1;
+}
+
+.product-card .card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Team Cards */
+.team-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.team-card:hover .card-img-top {
+    filter: grayscale(0%);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .product-card .card-body {
+        padding: 15px;
+    }
+    
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+}
+
+/* Navigation Link Hover Effects */
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+}
+
+.nav-link:hover {
+    color: #dc3545 !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #dc3545;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #dc3545 !important;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Product Card Hover Effects */
+.product-card {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .card-img-top {
+    transform: scale(1.03);
+}
+
+.product-card .btn-outline-danger {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .btn-outline-danger {
+    background-color: #dc3545;
+    color: white !important;
+}
+
+/* Button Hover Effects */
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white !important;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Media Icon Hover Effects */
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    background-color: #dc3545 !important;
+}
+
+/* Footer Link Hover Effects */
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #dc3545 !important;
+    padding-left: 5px;
+}

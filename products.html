@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Maybelline Philippines | Makeup & Cosmetics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Maybelline-Logo.png" alt="Maybelline" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero -->
+    <section class="products-hero py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Maybelline Philippines Products</h1>
+            <p class="lead">Discover professional-quality makeup at affordable prices</p>
+        </div>
+    </section>
+
+    <!-- Product Filter -->
+    <section class="product-filter py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-funnel"></i></span>
+                        <select class="form-select" id="category-filter">
+                            <option selected>All Categories</option>
+                            <option>Face</option>
+                            <option>Eyes</option>
+                            <option>Lips</option>
+                            <option>Skincare</option>
+                        </select>
+                        <select class="form-select" id="price-filter">
+                            <option selected>All Prices</option>
+                            <option>Under ₱300</option>
+                            <option>₱300 - ₱600</option>
+                            <option>Over ₱600</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+                        <select class="form-select" id="sort-by">
+                            <option selected>Sort By</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Best Sellers</option>
+                            <option>Newest</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Product 1 - Sky High Mascara -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card product-card h-100" data-category="eyes">
+                        <span class="badge bg-danger position-absolute top-0 end-0 m-2">New</span>
+                        <img src="1.jpg" class="card-img-top" alt="Maybelline Sky High Mascara">
+                        <div class="card-body">
+                            <h5 class="card-title">Sky High Mascara</h5>
+                            <p class="card-text">Lengthening and volumizing mascara for dramatic lashes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">₱549.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 - Fit Me Foundation -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card product-card h-100" data-category="face">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">Bestseller</span>
+                        <img src="Fit Me Foundation.jpg" class="card-img-top" alt="Maybelline Fit Me Foundation">
+                        <div class="card-body">
+                            <h5 class="card-title">Fit Me Foundation</h5>
+                            <p class="card-text">Natural-looking foundation with a flawless finish.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">₱439.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 - SuperStay Lipstick -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card product-card h-100" data-category="lips">
+                        <img src="2.jpg" class="card-img-top" alt="Maybelline SuperStay Lipstick">
+                        <div class="card-body">
+                            <h5 class="card-title">SuperStay Lipstick</h5>
+                            <p class="card-text">Long-lasting lip color that won't budge for up to 16 hours.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">₱499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 - Instant Age Rewind Concealer -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card product-card h-100" data-category="face">
+                        <img src="4.jpg" class="card-img-top" alt="Maybelline Instant Age Rewind Concealer">
+                        <div class="card-body">
+                            <h5 class="card-title">Instant Age Rewind Concealer</h5>
+                            <p class="card-text">Anti-aging concealer that erases dark circles and fine lines.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">₱549.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 - Baby Lips Lip Balm -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card product-card h-100" data-category="lips">
+                        <img src="Baby lips.jpg" class="card-img-top" alt="Maybelline Baby Lips Lip Balm">
+                        <div class="card-body">
+                            <h5 class="card-title">Baby Lips Lip Balm</h5>
+                            <p class="card-text">Moisturizing lip balm with SPF 20 and a hint of color.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">₱219.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 - Fit Me Blush -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card product-card h-100" data-category="face">
+                        <span class="badge bg-warning position-absolute top-0 end-0 m-2">Sale</span>
+                        <img src="fitmeblush.jpg" class="card-img-top" alt="Maybelline Blush">
+                        <div class="card-body">
+                            <h5 class="card-title">Fit Me Blush</h5>
+                            <p class="card-text">Natural-looking blush that complements your skin tone.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price"><del>₱389.00</del> ₱299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 - Brow Precise Micro Pencil -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card product-card h-100" data-category="eyes">
+                        <img src="brow.jpg" class="card-img-top" alt="Maybelline Eyebrow Pencil">
+                        <div class="card-body">
+                            <h5 class="card-title">Brow Precise Micro Pencil</h5>
+                            <p class="card-text">Ultra-fine micro pencil for natural-looking brows.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">₱439.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 - Master Chrome Highlighter -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="card product-card h-100" data-category="face">
+                        <img src="9.jpg" class="card-img-top" alt="Maybelline Master Chrome Highlighter">
+                        <div class="card-body">
+                            <h5 class="card-title">Master Chrome Highlighter</h5>
+                            <p class="card-text">Metallic highlighter for a radiant glow.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">₱599.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="section-title">Join Our Beauty Community</h2>
+                    <p>Subscribe for exclusive offers, new product alerts, and beauty tips</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Maybelline Philippines</h5>
+                    <p>Maybe She's Born With It. Maybe It's Maybelline.</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/maybellinephilippines/?brand_redir=20251700747#" class="text-white me-2" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/maybelline/?hl=en" class="text-white me-2" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://x.com/maybelline" class="text-white me-2" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@maybelline_ph" class="text-white me-2" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-white">New Arrivals</a></li>
+                        <li><a href="products.html" class="text-white">Best Sellers</a></li>
+                        <li><a href="products.html" class="text-white">Makeup</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">Our Story</a></li>
+                        <li><a href="about.html" class="text-white">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="contact.html" class="text-white">FAQs</a></li>
+                        <li><a href="contact.html" class="text-white">Store Locator</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Maybelline Philippines. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Made with <i class="bi bi-heart-fill text-danger"></i> for Filipino beauty lovers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
